@@ -4,12 +4,6 @@ local CoreGui = game:GetService("CoreGui")
 local UserInputService = game:GetService("UserInputService")
 local Lighting = game:GetService("Lighting")
 
---// CLEAN OLD UI & EFFECTS
-pcall(function()
-    if CoreGui:FindFirstChild("RedSoulKeySystem") then CoreGui.RedSoulKeySystem:Destroy() end
-    if Lighting:FindFirstChild("KeySystemBlur") then Lighting.KeySystemBlur:Destroy() end
-end)
-
 --// CONFIG
 local CONFIG = {
     API_KEY = "e272e094-2f1e-45ff-a636-55b95ee83ffa",
